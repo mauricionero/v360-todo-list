@@ -8,13 +8,15 @@
 </p>
 
 <p>
-  <strong>Description:</strong>
   <%= @todo_list.description %>
+  <br />
 </p>
-
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %> |
-<%= link_to 'Add Activity', new_todo_list_todo_list_activity_path(@todo_list) %>
+<br />
+<p>
+  <%= link_to '✏️ Edit', edit_todo_list_path(@todo_list) %> |
+  <%= link_to '🔙 Back', todo_lists_path %> |
+  <%= link_to '➕ Activity', new_todo_list_todo_list_activity_path(@todo_list) %>
+</p>
 
 <p>
   <%= render 'todo_list_activities/todo_list_activity' %>
