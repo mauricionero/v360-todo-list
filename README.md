@@ -7,21 +7,18 @@ This is a simple TODO list follwing the conventions of Ruby on Rails
 
 ## 🎬 Getting Started
 
+
 ✅**Ruby** and ✅**Bundler** is expected to be installed on your system.
 
 ### 🔌 Built With
 * [Ruby](https://www.ruby-lang.org/en) 2.6.5p114
 * [Bundler](http://bundler.io) 2.1.4
-* [Rails](https://rubyonrails.org/) 6.1.4
+* [Rails](https://rubyonrails.org/) 6.1.4.1
 
 ### 💎 Gems used:
 * **rubocop** to improve code quality
-* **rspec** for testing
-* **simple_calendar** to make it easy to manipulate and render a calendar
+* **mini-test** for testing
 * **pry** to debug
-
-### 📦 Javascript lib:
-* **Prototype** 1.7
 
 
 ## ☑️ Installing
@@ -38,19 +35,10 @@ This will install all dependencies needed for the project.
 
 ## 🧪 Running the Tests
 
-First its necessary to prepare the environment for the test running the command:
-```
-rake db:test:prepare
-```
 
 And then its ready to run the test with:
 ```
-rspec
-```
-
-If for any reason that rspec command doesn't work, try the following command:
-```
-bundle exec rspec
+rails test
 ```
 
 
@@ -66,10 +54,10 @@ That should be already be accessible at the browser at [localhost:3000](http://l
 
 ## 📋 Improvements to the future
 
-* As this project is just a simple calendar, it was made with a simple view and a simple Prototype library. In the case of an improvement, with more time the front-end could be done using a more modern framework, like React.
-* It could have a list of reminders in order at the right side of the screen to list the next reminders.
-* It could send an email or a notification in browser to alert with a configurable time before the reminder.
-* Prettier interface?
+* As this project is just a simple TODO list, it was made with a simple view just for the concept. In the case of an improvement, with more time the front-end could be done using a more modern framework, like React.
+* It could have a better interface for creating activities inside each list
+* It could send an email or a notification in browser to alert with a configurable time before the reminder when the activity is getting closer to its limit date.
+* Prettier interface!
 
 ----
 O desafio consiste em:
