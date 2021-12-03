@@ -1,7 +1,65 @@
 # v360-todo-list
 
-A TODO list challenge for the company V360
+# 📅 A TODO list challenge for the company V360
 
+This is a simple TODO list follwing the conventions of Ruby on Rails
+
+
+## 🎬 Getting Started
+
+
+✅**Ruby** and ✅**Bundler** is expected to be installed on your system.
+
+### 🔌 Built With
+* [Ruby](https://www.ruby-lang.org/en) 2.6.5p114
+* [Bundler](http://bundler.io) 2.1.4
+* [Rails](https://rubyonrails.org/) 6.1.4.1
+
+### 💎 Gems used:
+* **rubocop** to improve code quality
+* **mini-test** for testing
+* **pry** to debug
+
+
+## ☑️ Installing
+
+After copying the files, change into the newly created directory and run:
+
+```
+bundle install
+rake db:migrate
+```
+
+This will install all dependencies needed for the project.
+
+
+## 🧪 Running the Tests
+
+
+And then its ready to run the test with:
+```
+rails test
+```
+
+
+## $: Running the Application
+
+To run the application execute:
+```
+rails s
+```
+
+That should be already be accessible at the browser at [localhost:3000](http://localhost:3000/)
+
+
+## 📋 Improvements to the future
+
+* As this project is just a simple TODO list, it was made with a simple view just for the concept. In the case of an improvement, with more time the front-end could be done using a more modern framework, like React.
+* It could have a better interface for creating activities inside each list
+* It could send an email or a notification in browser to alert with a configurable time before the reminder when the activity is getting closer to its limit date.
+* Prettier interface!
+
+----
 O desafio consiste em:
 
 Entender o seu método de desenvolvimento, organização de código e conhecimento da linguagem.
