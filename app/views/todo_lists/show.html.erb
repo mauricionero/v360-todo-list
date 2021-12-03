@@ -12,10 +12,10 @@
   <%= @todo_list.description %>
 </p>
 
-<p>
-  <strong>Limit date:</strong>
-  <%= @todo_list.limit_date.to_s(:human_us) %>
-</p>
-
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<%= link_to 'Back', todo_lists_path %> |
+<%= link_to 'Add Activity', new_todo_list_todo_list_activity_path(@todo_list) %>
+
+<p>
+  <%= render 'todo_list_activities/todo_list_activity' %>
+</p>

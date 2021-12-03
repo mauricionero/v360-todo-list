@@ -26,7 +26,6 @@ class TodoListsControllerTest < ActionDispatch::IntegrationTest
         todo_list: {
           title: @todo_list.title,
           description: @todo_list.description,
-          limit_date: @todo_list.limit_date,
           color: @todo_list.color
         }
       }
@@ -50,7 +49,6 @@ class TodoListsControllerTest < ActionDispatch::IntegrationTest
       todo_list: {
         title: @todo_list.title,
         description: @todo_list.description,
-        limit_date: @todo_list.limit_date,
         color: @todo_list.color
       }
     }

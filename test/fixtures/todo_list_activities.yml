@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1,
+  todo_list_id: 1
+  title: Activity 1
+  description: Do something
+  priority: 1
+  limit_date: 2021-12-02 21:59:10
+
+two:
+  id: 2,
+  todo_list_id: 1
+  title: Activity 2
+  description: Do something else
+  priority: 2
+  limit_date: 2021-12-02 21:59:10

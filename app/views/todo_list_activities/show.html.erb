@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Todo list:</strong>
+  <%= @todo_list_activity.todo_list_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @todo_list_activity.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todo_list_activity.description %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @todo_list_activity.priority %>
+</p>
+
+<%= link_to 'Edit', edit_todo_list_todo_list_activity_path %> |
+<%= link_to 'Back', todo_list_todo_list_activities_path %>

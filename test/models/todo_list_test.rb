@@ -7,7 +7,6 @@ class TodoListTest < ActiveSupport::TestCase
     assert TodoList.create(
       title: 'valid title',
       description: 'valid description',
-      limit_date: DateTime.now,
       color: '#ABCDEF'
     )
   end
@@ -15,7 +14,6 @@ class TodoListTest < ActiveSupport::TestCase
   test 'invalid title (not present)' do
     todo_list = TodoList.new(
       description: 'valid description',
-      limit_date: DateTime.now,
       color: '#ABCDEF'
     )
 
@@ -28,7 +26,6 @@ class TodoListTest < ActiveSupport::TestCase
     todo_list = TodoList.new(
       title: 'valid title',
       description: 'a' * 257,
-      limit_date: DateTime.now,
       color: '#ABCDEF'
     )
 
@@ -41,7 +38,6 @@ class TodoListTest < ActiveSupport::TestCase
     todo_list = TodoList.new(
       title: 'valid title',
       description: 'valid description',
-      limit_date: DateTime.now,
       color: 'G23456'
     )
 
