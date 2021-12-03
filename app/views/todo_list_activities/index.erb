@@ -1,4 +1,4 @@
-<table>
+<table class="fl-table">
   <thead>
     <tr>
       <th title="Priority">🔥</th>
@@ -16,7 +16,7 @@
         <td><%= link_to todo_list_activity.title, edit_todo_list_todo_list_activity_path(todo_list_id: @todo_list.id, id: todo_list_activity.id) %></td>
         <td><%= todo_list_activity.limit_date.to_s(:human_us) %></td>
         <td><%= todo_list_activity.description %></td>
-        <td><%= link_to 'Destroy', todo_list_todo_list_activity_path(todo_list_id: @todo_list.id, id: todo_list_activity.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '🗑️', todo_list_todo_list_activity_path(todo_list_id: @todo_list.id, id: todo_list_activity.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Todo List Activity', new_todo_list_todo_list_activity_path(@todo_list) %>
+<%= link_to '➕ New Todo List Activity', new_todo_list_todo_list_activity_path(@todo_list) %>
