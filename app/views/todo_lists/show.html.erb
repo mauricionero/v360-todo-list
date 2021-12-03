@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2>
+    <span style="background-color: <%= @todo_list.color %>" class="dot"></span>
+    <%= @todo_list.title %>
+  </h2>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todo_list.description %>
+</p>
+
+<p>
+  <strong>Limit date:</strong>
+  <%= @todo_list.limit_date.to_s(:human_us) %>
+</p>
+
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<%= link_to 'Back', todo_lists_path %>
